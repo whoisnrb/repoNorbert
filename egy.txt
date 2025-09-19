@@ -1,1 +1,1 @@
-változott a fájl tartalma
+System.out.println("Hello Git!");
