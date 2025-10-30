@@ -2,10 +2,19 @@
 
 import { useState } from 'react';
 import Hero from '../components/Hero';
-import Features from '../components/Features';
-import Pricing from '../components/Pricing';
-import Contact from '../components/Contact';
 import FloatingNav from '../components/FloatingNav';
+import Stats from '../components/Stats';
+import LogoTicker from '../components/LogoTicker';
+import ProductSection from '../components/ProductSection';
+import AutomationShowcase from '../components/AutomationShowcase';
+import Solutions from '../components/Solutions';
+import Templates from '../components/Templates';
+import Integrations from '../components/Integrations';
+import Testimonials from '../components/Testimonials';
+import Pricing from '../components/Pricing';
+import Resources from '../components/Resources';
+import CTASection from '../components/CTASection';
+import Footer from '../components/Footer';
 import translations from '../lib/translations';
 
 const languageOptions = Object.entries(translations).map(([code, value]) => ({
@@ -19,6 +28,8 @@ export default function Home() {
 
   return (
     <main className="relative overflow-hidden">
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(34,211,238,0.35),transparent_60%),radial-gradient(circle_at_80%_10%,rgba(96,165,250,0.25),transparent_55%),radial-gradient(circle_at_10%_80%,rgba(56,189,248,0.2),transparent_65%)]" />
       <FloatingNav
         nav={content.nav}
         languageLabel={content.languageLabel}
@@ -26,16 +37,19 @@ export default function Home() {
         language={language}
         onLanguageChange={setLanguage}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-slate-900 via-slate-950 to-cyan-900" />
-      <div className="absolute inset-0 -z-10 opacity-40">
-        <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-cyan-500 blur-3xl" />
-        <div className="absolute bottom-10 right-1/4 h-96 w-96 rounded-full bg-blue-500 blur-3xl" />
-      </div>
       <Hero content={content.hero} />
-      <Features content={content.features} />
+      <Stats content={content.metrics} />
+      <LogoTicker content={content.logos} />
+      <ProductSection content={content.product} />
+      <AutomationShowcase content={content.automations} />
+      <Solutions content={content.solutions} />
+      <Templates content={content.templates} />
+      <Integrations content={content.integrations} />
+      <Testimonials content={content.testimonials} />
       <Pricing content={content.pricing} />
-      <Contact content={content.contact} />
-      <footer className="py-8 text-center text-sm text-slate-300">{content.footer}</footer>
+      <Resources content={content.resources} />
+      <CTASection content={content.cta} />
+      <Footer content={content.footer} />
     </main>
   );
 }
