@@ -2,37 +2,22 @@
 
 import { motion } from 'framer-motion';
 
-const features = [
-  {
-    title: 'AI Automation',
-    description: 'Build automations without code using n8n and AI agents.'
-  },
-  {
-    title: 'Business Growth',
-    description: 'Save hours daily by automating repetitive tasks.'
-  },
-  {
-    title: 'Client Integrations',
-    description: 'Seamless integration with Google, Slack, and more.'
-  }
-];
-
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 }
 };
 
-export default function Features() {
+export default function Features({ content }) {
+  const { title, description, items } = content;
+
   return (
     <section id="features" className="relative z-10 mx-auto max-w-6xl px-6 py-24">
       <div className="mb-12 text-center">
-        <h2 className="text-4xl font-semibold text-white">Features</h2>
-        <p className="mt-4 text-slate-300">
-          Designed to deliver seamless, intelligent automation for modern teams.
-        </p>
+        <h2 className="text-4xl font-semibold text-white">{title}</h2>
+        <p className="mt-4 text-slate-300">{description}</p>
       </div>
       <div className="grid gap-8 md:grid-cols-3">
-        {features.map((feature, index) => (
+        {items.map((feature, index) => (
           <motion.div
             key={feature.title}
             variants={cardVariants}

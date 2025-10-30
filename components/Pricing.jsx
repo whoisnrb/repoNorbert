@@ -1,39 +1,21 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-const plans = [
-  {
-    name: 'Starter',
-    price: 49,
-    description: 'Perfect for small teams starting with automation.',
-    features: ['Email support', '3 automation workflows', 'Workflow analytics']
-  },
-  {
-    name: 'Pro',
-    price: 149,
-    description: 'Advanced automation for growing businesses.',
-    features: ['Priority support', 'Unlimited workflows', 'Custom integrations']
-  },
-  {
-    name: 'Enterprise',
-    price: 299,
-    description: 'Tailored automation for complex operations.',
-    features: ['Dedicated success manager', 'SLA guarantees', 'On-premise options']
-  }
-];
+export default function Pricing({ content }) {
+  const { title, description, plans, defaultPlan } = content;
+  const [active, setActive] = useState(defaultPlan ?? plans?.[0]?.name ?? '');
 
-export default function Pricing() {
-  const [active, setActive] = useState('Pro');
+  useEffect(() => {
+    setActive(defaultPlan ?? plans?.[0]?.name ?? '');
+  }, [defaultPlan, plans]);
 
   return (
     <section id="pricing" className="relative mx-auto max-w-6xl px-6 pb-24">
       <div className="mb-12 text-center">
-        <h2 className="text-4xl font-semibold text-white">Pricing</h2>
-        <p className="mt-4 text-slate-300">
-          Choose the setup package that matches your automation ambition.
-        </p>
+        <h2 className="text-4xl font-semibold text-white">{title}</h2>
+        <p className="mt-4 text-slate-300">{description}</p>
       </div>
       <div className="flex justify-center pb-12">
         <div className="glass-panel inline-flex rounded-full p-1">
