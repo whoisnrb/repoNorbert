@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar Illustration Three</title>
+  <desc id="desc">Minimal circular avatar illustration with geometric pattern.</desc>
+  <defs>
+    <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#9A8CFF" />
+    </pattern>
+  </defs>
+  <circle cx="48" cy="48" r="46" fill="#E5F5FF" stroke="#2D2A44" stroke-width="4" />
+  <circle cx="48" cy="38" r="16" fill="#9A8CFF" />
+  <path d="M20 80c6-14 16-22 28-22s22 8 28 22" fill="url(#dots)" />
+</svg>

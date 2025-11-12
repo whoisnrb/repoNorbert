@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Norbert Studio — Revenue-Centered Product Growth</title>
+    <meta name="description" content="Growth homepage showcasing Norbert Studio's experimentation programs, analytics, and activation expertise." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">NS</span>
+          <span>Norbert Studio</span>
+        </a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="growth-navigation" data-nav-toggle>
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+          </svg>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav id="growth-navigation" class="nav" data-nav>
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#programs" data-nav-link>Programs</a></li>
+            <li class="nav__item"><a class="nav__link" href="#analytics" data-nav-link>Analytics</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button class="nav__dropdown-toggle" type="button" aria-expanded="false" data-dropdown-toggle>
+                Case Studies
+                <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </button>
+              <div class="nav__dropdown" role="menu">
+                <a href="index.html" role="menuitem">Core Studio</a>
+                <a href="home-experience.html" role="menuitem">Experience Labs</a>
+              </div>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#contact" data-nav-link>Contact</a></li>
+          </ul>
+          <a class="btn btn--primary" href="#contact" data-nav-link>Request growth audit</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="programs">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <span class="badge">Growth operating models</span>
+            <h1>Launch experimentation engines that unlock compounding revenue.</h1>
+            <p>We partner with ambitious teams to design test-and-learn ecosystems, blending qualitative insight with predictive analytics.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Build a roadmap</a>
+              <a class="btn btn--ghost" href="#analytics">See diagnostics</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img src="assets/images/hero-pattern.svg" alt="Growth metrics dashboard" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="growth-slider-heading">
+        <div class="container">
+          <div class="section__heading">
+            <span class="badge">Experimentation wins</span>
+            <h2 id="growth-slider-heading">Sprints engineered around actionable data</h2>
+            <p>Every sprint is grounded in a test card framework, building durable knowledge bases for your entire org.</p>
+          </div>
+          <div class="slider" tabindex="0" data-autoplay="true" data-interval="5000">
+            <div class="slider__track" data-slider-track>
+              <article class="slider__slide" data-slider-slide>
+                <div class="slider__slide-content">
+                  <div>
+                    <h3 class="slider__headline">Retention flywheel for SaaS</h3>
+                    <p>Experiment library reduced churn by 18% through automated lifecycle messaging and progressive profiling.</p>
+                    <a class="btn btn--primary" href="#contact">Run a pilot</a>
+                  </div>
+                  <figure class="slider__media">
+                    <img src="assets/images/hero-pattern.svg" alt="Lifecycle flow diagrams" loading="lazy" />
+                  </figure>
+                </div>
+              </article>
+              <article class="slider__slide" data-slider-slide>
+                <div class="slider__slide-content">
+                  <div>
+                    <h3 class="slider__headline">Pricing optimization</h3>
+                    <p>Delivered 22% ARPU lift via conjoint-driven experiments and automated paywall messaging.</p>
+                    <a class="btn btn--ghost" href="#analytics">View insights</a>
+                  </div>
+                  <figure class="slider__media">
+                    <video muted loop playsinline poster="assets/images/hero-pattern.svg">
+                      <source src="https://cdn.coverr.co/videos/coverr-spinning-coins-6782/1080p.mp4" type="video/mp4" />
+                    </video>
+                  </figure>
+                </div>
+              </article>
+            </div>
+            <div class="slider__controls">
+              <button class="slider__button" type="button" data-slider-prev aria-label="Previous slide">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </button>
+              <button class="slider__button" type="button" data-slider-next aria-label="Next slide">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </button>
+            </div>
+            <div class="slider__pagination" data-slider-pagination aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="analytics" aria-labelledby="analytics-heading">
+        <div class="container">
+          <div class="section__heading">
+            <span class="badge">Analytics stack</span>
+            <h2 id="analytics-heading">Unified visibility into acquisition, activation, and revenue</h2>
+            <p>We integrate and normalize data from your existing tools, then visualize opportunities with bespoke dashboards.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-card__icon" aria-hidden="true">📈</span>
+              <h3>North star metrics</h3>
+              <p>Align leadership around actionable metrics with instrumentation that scales cleanly.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon" aria-hidden="true">🧪</span>
+              <h3>Experiment runbooks</h3>
+              <p>Reusable templates connect hypotheses to analytics, ensuring every test ships with statistical rigor.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon" aria-hidden="true">🤖</span>
+              <h3>Automation &amp; AI</h3>
+              <p>Trigger personalized messaging powered by predictive models and behavioral segmentation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="testimonial-heading">
+        <div class="container">
+          <div class="section__heading">
+            <span class="badge">Operator perspective</span>
+            <h2 id="testimonial-heading">“Norbert is the missing growth guild”</h2>
+            <p>Leaders rely on us to establish velocity with governance that scales.</p>
+          </div>
+          <div class="media-grid">
+            <article class="testimonial">
+              <div class="testimonial__header">
+                <img src="assets/images/avatar-3.svg" alt="Portrait of Sofia Reyes" width="64" height="64" />
+                <div>
+                  <p class="testimonial__name">Sofia Reyes</p>
+                  <p class="testimonial__role">VP Growth, Lumen</p>
+                </div>
+              </div>
+              <p>“In three months they operationalized our experimentation backlog with dashboards that made weekly rituals effortless.”</p>
+            </article>
+            <article class="testimonial">
+              <div class="testimonial__header">
+                <img src="assets/images/avatar-1.svg" alt="Portrait of Jamal Rivers" width="64" height="64" />
+                <div>
+                  <p class="testimonial__name">Jamal Rivers</p>
+                  <p class="testimonial__role">Head of Lifecycle, Driftspace</p>
+                </div>
+              </div>
+              <p>“We now launch coordinated growth campaigns across product and marketing in under 48 hours. The playbooks are gold.”</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-growth-heading">
+        <div class="container contact">
+          <div class="contact__grid">
+            <div>
+              <span class="badge">Let’s grow</span>
+              <h2 id="contact-growth-heading">Share your quarterly targets</h2>
+              <p>We’ll map an experimentation plan aligned to your revenue model.</p>
+            </div>
+            <form class="form" data-contact-form novalidate>
+              <div class="field">
+                <label for="growth-name">Full name</label>
+                <input class="input" id="growth-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="growth-email">Work email</label>
+                <input class="input" id="growth-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="field" hidden aria-hidden="true">
+                <label for="growth-website">Website</label>
+                <input class="input" id="growth-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+              <div class="field">
+                <label for="growth-experiments">Experiments per quarter</label>
+                <select class="select" id="growth-experiments" name="experiments">
+                  <option value="">Select volume</option>
+                  <option value="0-5">0–5</option>
+                  <option value="5-10">5–10</option>
+                  <option value="10+">10+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="growth-message">What should we know?</label>
+                <textarea class="textarea" id="growth-message" name="message" rows="4" required></textarea>
+              </div>
+              <button class="btn btn--primary" type="submit">Request audit</button>
+              <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <p class="footer__brand">Norbert Studio</p>
+            <p>Driving sustainable growth with cross-functional experimentation teams.</p>
+          </div>
+          <div>
+            <h3>Navigate</h3>
+            <ul class="footer__links">
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#analytics">Analytics</a></li>
+              <li><a href="index.html">Core homepage</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Connect</h3>
+            <ul class="footer__links">
+              <li><a href="mailto:hello@norstudio.com">Email us</a></li>
+              <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+              <li><a href="https://www.twitter.com">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__meta">
+          <span>&copy; 2024 Norbert Studio</span>
+          <a href="mailto:accessibility@norstudio.com">Accessibility support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

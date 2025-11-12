@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hero Background Pattern</title>
+  <desc id="desc">A soft gradient background with diagonal translucent lines.</desc>
+  <defs>
+    <linearGradient id="gradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4F1FF" />
+      <stop offset="100%" stop-color="#E5F5FF" />
+    </linearGradient>
+    <pattern id="diagonal" width="80" height="80" patternUnits="userSpaceOnUse" patternTransform="skewX(-20)">
+      <rect width="40" height="80" fill="rgba(255,255,255,0.4)" />
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#gradient)" />
+  <rect width="1600" height="900" fill="url(#diagonal)" />
+</svg>
